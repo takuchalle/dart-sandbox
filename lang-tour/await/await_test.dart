@@ -1,12 +1,11 @@
 import 'dart:async';
-import 'dart:io';
 
 main() async {
   print("start");
 
-  var unko = await doSomething();
+  var some = await doSomething();
   
-  print("${unko} done");
+  print("${some} done");
 }
 
 Future<String> doSomething() async {
@@ -21,7 +20,7 @@ Future<String> doSomething() async {
 
   print("${await task}"); /* 重い処理待ち */
   
-  return "hoge";
+  return "something";
 }
 
 const oneSecond = Duration(seconds: 1);
